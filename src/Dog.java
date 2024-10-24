@@ -22,6 +22,7 @@ public class Dog {
      * @param x
      * @param y
      */
+
     protected Dog(PApplet sketch, int x, int y, String name, String breed, int age, PImage img) {
         this.x = x;
         this.y = y;
@@ -37,7 +38,9 @@ public class Dog {
      * and an AdoptMe button. Work on displaying each element, one at a time. Test after each addition.
      */
     protected void draw() {
-        
+        this.sketch.image(img,x,y);
+        sketch.rect(50,50,50,50);
+
     }
 
 

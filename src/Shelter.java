@@ -36,4 +36,8 @@ public class Shelter {
 
     }
 
+
+    public Dog getDog(int i){
+        return shelter.get(i);
+    }
 }
