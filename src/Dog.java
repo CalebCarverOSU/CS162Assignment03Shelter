@@ -38,8 +38,6 @@ public class Dog {
      * and an AdoptMe button. Work on displaying each element, one at a time. Test after each addition.
      */
     protected void draw() {
-        this.sketch.image(img,x,y);
-        sketch.rect(50,50,50,50);
 
     }
 
@@ -49,6 +47,18 @@ public class Dog {
      */
     public String toString() {
         return ("this dogs name is " + name + " they are a " + breed + " and are " + age + "years old.");
+    }
+
+    public PImage getImg(){
+        return img;
+    }
+
+    public float getX(){
+        return x;
+    }
+
+    public float getY(){
+        return y;
     }
 }
 

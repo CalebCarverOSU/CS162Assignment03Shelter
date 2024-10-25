@@ -5,7 +5,7 @@ public class Shelter {
     private PApplet sketch;
     /* TODO: A Shelter contains (HAS) dogs inside it. Define an array list variable to store the dogs. Should it be public or private? */
 
-    public ArrayList<Dog> shelter = new ArrayList<>();
+    private ArrayList<Dog> shelter = new ArrayList<Dog>();
 
     /**
      * TODO:  Your shelter constructor should initialize your member variables. Add that code in the body of the constructor.
@@ -13,6 +13,8 @@ public class Shelter {
      * @param sketch
      */
     Shelter(PApplet sketch) {
+        this.sketch = sketch;
+         this.shelter = new ArrayList<Dog>();
 
     }
 
@@ -33,11 +35,17 @@ public class Shelter {
      * Add an appropriate access modifier
      */
     void displayAnimals(){
-
-    }
-
-
-    public Dog getDog(int i){
-        return shelter.get(i);
+        sketch.fill(255,255,255);
+        sketch.textSize(40);
+        sketch.text("Calebs Dog Shelter", 40, 50);
+        int YOffsett = 100;
+        for(int i = 0; i < shelter.size(); i++){
+            sketch.textSize(20);
+            sketch.text(shelter.toString(),100,YOffsett);
+            sketch.image(shelter.get(i).getImg(),0,YOffsett - 25);
+            YOffsett += 75;
+            //dog.draw();
+        }
+        
     }
 }
