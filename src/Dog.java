@@ -38,6 +38,7 @@ public class Dog {
      * and an AdoptMe button. Work on displaying each element, one at a time. Test after each addition.
      */
     protected void draw() {
+        
 
     }
 
@@ -46,7 +47,7 @@ public class Dog {
      * TODO:  Your toString method should return a String containing the name, breed, and age of the dog object
      */
     public String toString() {
-        return ("this dogs name is " + name + " they are a " + breed + " and are " + age + "years old.");
+        return ("This dogs name is " + name + " they are a " + breed + " and are " + age + " years old.");
     }
 
     public PImage getImg(){

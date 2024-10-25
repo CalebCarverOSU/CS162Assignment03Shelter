@@ -40,9 +40,14 @@ public class Shelter {
         sketch.text("Calebs Dog Shelter", 40, 50);
         int YOffsett = 100;
         for(int i = 0; i < shelter.size(); i++){
-            sketch.textSize(15);
-            sketch.text(shelter.get(i).toString(),100,YOffsett);
+            sketch.textSize(13);
+            sketch.fill(0);
+            sketch.text(shelter.get(i).toString(),110,YOffsett);
             sketch.image(shelter.get(i).getImg(),0,YOffsett - 25);
+            sketch.fill(255);
+            sketch.rect(110,YOffsett + 10,70,30);
+            sketch.fill(0);
+            sketch.text("Adopt Me", 120,YOffsett + 30);
             YOffsett += 75;
             //dog.draw();
         }
